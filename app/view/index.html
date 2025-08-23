@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse de Crime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Analyse de Crime</h1>
+    <div class="form-container">
+        <form id="crimeForm">
+            <label for="suspect">Suspect :</label>
+            <select id="suspect" name="suspect" required>
+                <option value="">Sélectionnez un suspect</option>
+                <option value="john">John</option>
+                <option value="mary">Mary</option>
+                <option value="alice">Alice</option>
+                <option value="bruno">Bruno</option>
+                <option value="sophie">Sophie</option>
+            </select>
+
+            <label for="crime">Type de crime :</label>
+            <select id="crime" name="crime" required>
+                <option value="">Sélectionnez un crime</option>
+                <option value="vol">Vol</option>
+                <option value="assassinat">Assassinat</option>
+                <option value="escroquerie">Escroquerie</option>
+            </select>
+
+            <button type="submit">Analyser</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
